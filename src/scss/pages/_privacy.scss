@@ -1,0 +1,46 @@
+.privacy-section {
+    .privacy-left-content {
+        .privacy-links {
+            top: 190px;
+            
+            li{
+                @include media-breakpoint-down(lg){
+                    margin-bottom: 0px !important;
+                }
+                .arrow{
+                    height: 9px;
+                    left: -10px;
+                }
+            }
+            .active {
+                a {
+                   opacity: 100% !important;
+                   padding-left: 15px;
+                }
+                .arrow{
+                    left: 0px;
+                }
+            }
+        }
+    }
+
+    .privacy-right-content {
+        .single-content {
+            p {
+                a {
+                    text-decoration: none !important;
+                }
+            }
+
+            .right-content-data{
+                &:last-child{
+                    margin-bottom: 0px !important;
+                }
+            }
+
+            &:first-child {
+                padding-top: 0px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+.header {
+    z-index: 999 !important;
+    border-bottom: 1px solid rgba($color: $white, $alpha: 0.34);
+
+    .header-logo {
+        height: 47px;
+    }
+    .black-logo,
+    .black-search,
+    .black-btn-arrow{
+        display: none;
+    }
+
+    .menu-item {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0px !important;
+        }
+
+        .mega-menu {
+            opacity: 0;
+            visibility: hidden;
+            .header-cards {
+                height: 348px;
+                .card-content{
+                    padding: 30px;
+                }
+                .card-layer{
+                    background: linear-gradient(180deg, #00000036, #0808088E);
+                }
+                .card-arrow{
+                    height: 42px;
+                    width: 42px;
+                }
+            }
+        }
+    }
+
+    .search-icon {
+        height: 21px;
+    }
+
+    &.header-hover,
+    &.header-hover.dark-header,
+    &.search-hover.dark-header{
+         .white-logo,
+        .white-search,
+        .white-btn-arrow{
+            display: block !important;
+        }
+        .black-logo,
+        .black-search,
+        .black-btn-arrow{
+             display: none !important;
+        }
+         .menu-item{
+            .menu-item-anchor{
+                color: $white !important;
+            }
+        }
+
+        .btnB{
+            background-color: rgba($color: $color-E5F4F8, $alpha: 0.23);
+            color: $white !important;
+        }
+        background-color: $color-323639;
+        .menu-item{
+            &.menu-active{
+                .plus{
+                    transform: rotate(45deg);
+                }
+                 .mega-menu {
+                    border-top: 1px solid rgba($color: $white, $alpha: 0.34);
+                    height: 440px;
+                    opacity: 1;
+                    visibility: visible;
+                    overflow: auto;
+                 }
+            }
+        }
+    }
+
+      .search-menu{
+        opacity: 0;
+        visibility: hidden;
+        .header-input{
+            height: 51px;
+            border: 1px solid $color-FFFFFF57;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: transparent;
+            &::placeholder{
+                font-family: "Inter-regular";
+                font-size: $font16;
+                line-height: $leading26;
+                color: $white;
+            }
+            .search-icon{
+                height: 20px;
+            }
+        }
+        .search-data{
+            border-bottom: 1px solid $color-707070;
+            &:first-child{
+                padding-top: 0px !important;
+            }
+        }
+    }
+
+    &.dark-header{
+        border-bottom: 1px solid rgba($color: $color-343741, $alpha: 0.34);
+
+        .white-logo,
+        .white-search,
+        .white-btn-arrow{
+            display: none;
+        }
+         .black-logo,
+         .black-search,
+         .black-btn-arrow{
+            display: block;
+        }
+        .menu-item{
+            .menu-item-anchor{
+                color: $color-343741 !important;
+            }
+        }
+        .btnB{
+            background-color: rgba($color: $color-343741, $alpha: 0.23);
+            color: $color-343741 !important;
+        }
+    }
+
+    &.search-hover{
+          background-color: $color-343741 !important;
+          .search-menu{
+            opacity: 1;
+            visibility: visible;
+            border-top: 1px solid rgba($color: $white, $alpha: 0.34);
+            height: 100vh;
+            overflow: auto;
+          }
+    }
+
+     &.hidden {
+        transform: translateY(-200px);
+    }
+
+    &.header-fixed-os {
+        transform: translateY(0px);
+    }
+
+    &.header-fixed {
+        background-color: $color-323639;
+    }
+    &.header-fixed.dark-header {
+        background-color: $white;
+    }
+
+  
+}
+
+body{
+    position: relative;
+    &.header-open{
+        &::after{
+            content: '';
+            background-color: rgba($color: $black, $alpha: 0.28);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+}

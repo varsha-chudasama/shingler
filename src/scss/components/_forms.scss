@@ -1,0 +1,26 @@
+.input{
+    height: 51px;
+    border: 1px solid $color-FFFFFF57;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: transparent;
+    &::placeholder{
+        font-family: "Inter-regular";
+        font-size: $font16;
+        line-height: $leading26;
+        color: $white;
+    }
+}
+
+.textarea{
+    border: 1px solid $color-FFFFFF57;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: transparent;
+    &::placeholder{
+        font-family: "Inter-regular";
+        font-size: $font16;
+        line-height: $leading26;
+        color: $white;
+    }
+}

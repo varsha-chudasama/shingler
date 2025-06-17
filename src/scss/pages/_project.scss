@@ -1,0 +1,53 @@
+.project-filter-row{
+    .filter-button{
+        height: 42px;
+        border: 1px solid $color-707070;
+        background-color: transparent;
+        padding-left: 25px;
+        padding-right: 25px;
+        &.active{
+            background-color: $color-EDF0F7;
+            border: 1px solid $color-EDF0F7;
+            color: $color-2A2D2C !important;
+        }
+        &:last-child{
+            margin-right: 0px !important;
+        }
+    }
+}
+
+.our-project-bg-img{
+    top: 120px;
+    height: 857px;
+    right: -150px;
+}
+
+.overview-section{
+    .overview-point-container{
+        .overview-point{
+            border-top: 1px solid rgba($color: $black, $alpha: 0.2);
+            &:last-child{
+                border-bottom: 1px solid rgba($color: $black, $alpha: 0.2);
+            }
+        }
+    }
+}
+
+.masonry-section{
+    .image-col{
+        &:nth-child(4n + 1),
+        &:nth-child(4n + 4){
+            width: 42.2%;
+        }
+        &:nth-child(4n + 2),
+        &:nth-child(4n + 3){
+            width: 57.80%;
+        }
+        .masonry-img{
+            height: 461px;
+        }
+        .play-btn{
+            height: 110px;
+        }
+    }
+}

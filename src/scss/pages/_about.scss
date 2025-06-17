@@ -1,0 +1,46 @@
+.sub-hero-section{
+    height: 583px;
+}
+
+.image-video-full-banner-img{
+    height: 689px;
+}
+
+.accordion-left-right-section{
+    .accordion-image{
+        height: 664px;
+    }
+    .closet-accordion{
+        .closet-item{
+            border-bottom: 1px solid $color-DDDDDD;
+            &:first-child{
+                border-top: 1px solid $color-DDDDDD;
+            }
+            .closet-header{
+                &.active{
+                    .accordion-close{
+                        display: block !important;
+                    }
+                }
+                .accordion-close{
+                    height: 42px;
+                }
+            }
+        }
+        .closet-content{
+            display: none;
+        }
+    }
+}
+
+.logo-slider-section{
+    .logo-img{
+        height: 45px;
+    }
+}
+
+.team-cards{
+    .team-cards{
+        height: 316px;
+    }
+}

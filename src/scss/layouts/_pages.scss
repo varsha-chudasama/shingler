@@ -1,0 +1,15 @@
+.prefix{
+    padding: 8px 12px;
+    &.bg-343741-prefix{
+        background-color: rgba($color: $color-343741, $alpha: 0.1);
+    }
+    &.bg-EDF0F7-prefix{
+        background-color: rgba($color: $color-EDF0F7, $alpha: 0.1);
+    }
+    &.bg-black-prefix{
+        background-color: rgba($color: $black, $alpha: 0.2);
+    }
+    &.border-323639-prefix{
+        border: 1px solid $color-323639;
+    }
+}
