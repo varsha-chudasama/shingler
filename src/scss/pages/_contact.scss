@@ -1,45 +1,26 @@
-.social-icon-group{
+.social-icon-group {
     margin-right: 20px;
-    &:last-child{
+
+    &:last-child {
         margin-right: 0px !important;
     }
-    .social-icon{
+
+    .social-icon {
         height: 20px;
     }
 }
-.location-section{
-    .location-img{
+
+.location-section {
+    .location-img {
         height: 573px;
         mix-blend-mode: luminosity;
     }
 }
 
-.faq-accordion-section{
-       .closet-accordion{
-        .closet-item{
+.faq-accordion-section {
+    .closet-accordion {
+        .closet-item {
             border-top: 1px solid rgba($color: $black, $alpha: 0.35);
-            .closet-header{
-                .accordion-close{
-                    height: 42px;
-                    width: 42px;
-                    .plus{
-                        height: 10px;
-                    }
-                }
-                &.active{
-                    .accordion-close{
-                        .plus{
-                            transform: rotate(45deg);
-                        }
-                    }
-                }
-                .accordion-close{
-                    height: 42px;
-                }
-            }
-        }
-        .closet-content{
-            display: none;
         }
     }
 }

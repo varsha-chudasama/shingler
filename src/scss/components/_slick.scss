@@ -117,8 +117,12 @@
             flex-direction: column;
             text-align: start;
             width: 2px;
-            height: 49px;
+            height: 50px;
             background-color: rgba($color: $color-343741, $alpha: 0.14);
+
+            @include media-breakpoint-down(lg) {
+                height: 60px;
+            }
 
             &.slick-active {
                 background-color: rgba($color: $color-343741, $alpha: 1.0);
@@ -130,6 +134,21 @@
         }
     }
 }
+
+.how-we-work-slider,
+.latest-news-slider {
+    .slick-list {
+        overflow: visible;
+        margin-left: -8px;
+        margin-right: -8px;
+
+        .slick-slide {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+
 
 .history-slider {
     .slick-list {
@@ -163,14 +182,14 @@
             padding-right: 30px;
 
             @include media-breakpoint-down(lg) {
-                padding-right: 15px;
+                padding-right: 16px;
             }
 
             .our-history-img {
                 height: 365px;
 
                 @include media-breakpoint-down(lg) {
-                    height: 276px;
+                    height: 293px;
                 }
             }
         }

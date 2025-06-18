@@ -4,8 +4,8 @@
     right: 15px;
 
     @include media-breakpoint-down(lg) {
-        top: 25px;
-        right: 25px;
+        top: 16px;
+        right: 16px;
     }
 
     .btn-close {
@@ -13,10 +13,17 @@
         height: 42px;
         width: 42px;
         background: none;
+
+        @include media-breakpoint-down(lg){
+            width: 35px;
+            height: 35px;
+        }
     }
 }
 
 .modal {
+    border-color: transparent !important;
+
     .modal-dialog {
         @include media-breakpoint-down(lg) {
             min-width: 100%;
@@ -47,6 +54,8 @@
             .modal-content {
                 height: 515px;
                 padding: 0 62px 0 0;
+                border: 0px !important;
+                border-radius: 0px !important;
 
                 @include media-breakpoint-down(lg) {
                     padding: 0;
@@ -60,7 +69,7 @@
                         @include media-breakpoint-down(lg) {
                             min-width: 100%;
                             width: 100%;
-                            height: 350px !important;
+                            height: 375px !important;
                         }
                     }
 
@@ -69,7 +78,7 @@
                         padding-left: 92px;
 
                         @include media-breakpoint-down(lg) {
-                            padding: 45px 25px 55px;
+                            padding: 50px 20px 65px;
                         }
 
                         .modal-member-desc {
@@ -84,7 +93,6 @@
                         }
 
                         .carousel-arrow {
-
                             .carousel-control-prev,
                             .carousel-control-next {
                                 height: 45px;
@@ -93,8 +101,8 @@
                                 border-radius: 2px;
 
                                 @include media-breakpoint-down(lg) {
-                                    height: 35px;
-                                    width: 35px;
+                                    height: 54px;
+                                    width: 54px;
                                 }
                             }
 
@@ -123,9 +131,9 @@
         }
     }
 
-    &.enquiry-modal{
+    &.enquiry-modal {
         .modal-dialog {
-         min-width: 680px;
+            min-width: 680px;
 
             @include media-breakpoint-down(xl) {
                 min-width: 680px;
@@ -143,9 +151,9 @@
         }
     }
 
-    &.apply-modal{
+    &.apply-modal {
         .modal-dialog {
-         min-width: 680px;
+            min-width: 680px;
 
             @include media-breakpoint-down(xl) {
                 min-width: 680px;
@@ -162,5 +170,5 @@
             }
         }
     }
-    
+
 }

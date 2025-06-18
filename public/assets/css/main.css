@@ -17574,6 +17574,14 @@ textarea {
     line-clamp: initial !important;
     -webkit-line-clamp: initial !important;
   }
+  .res-row8 {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .res-row8 > * {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 /*******************************************************************************
 ******************************* COLOUR VARIABLES *******************************
@@ -18095,9 +18103,20 @@ button,
 .project-auto-slider-cards .project-card-image {
   height: 413px;
 }
+@media (max-width: 991.98px) {
+  .project-auto-slider-cards .project-card-image {
+    height: 250px;
+  }
+}
 .project-auto-slider-cards .project-arrow {
   height: 42px;
   width: 42px;
+}
+@media (max-width: 991.98px) {
+  .project-auto-slider-cards .project-arrow {
+    width: 35px;
+    height: 35px;
+  }
 }
 .project-auto-slider-cards .project-arrow img {
   height: 9px;
@@ -18106,22 +18125,64 @@ button,
 .latest-cards-col {
   border-right: 1px solid #DDDDDD;
 }
+@media (max-width: 991.98px) {
+  .latest-cards-col {
+    border-right: 0px !important;
+  }
+}
 .latest-cards-col:first-child {
   flex: 0 0 auto;
   width: 50%;
 }
+@media (max-width: 991.98px) {
+  .latest-cards-col:first-child {
+    width: 100%;
+  }
+}
 .latest-cards-col:first-child .news-image {
   height: 502px;
+}
+@media (max-width: 991.98px) {
+  .latest-cards-col:first-child .news-image {
+    height: 250px;
+  }
 }
 .latest-cards-col:nth-child(2), .latest-cards-col:nth-child(3) {
   flex: 0 0 auto;
   width: 25%;
 }
+@media (max-width: 991.98px) {
+  .latest-cards-col:nth-child(2), .latest-cards-col:nth-child(3) {
+    width: 100%;
+  }
+}
 .latest-cards-col:nth-child(2) .news-image, .latest-cards-col:nth-child(3) .news-image {
   height: 266px;
 }
+@media (max-width: 991.98px) {
+  .latest-cards-col:nth-child(2) .news-image, .latest-cards-col:nth-child(3) .news-image {
+    height: 250px;
+  }
+}
 .latest-cards-col:last-child {
   border-right: none;
+}
+
+.team-cards:first-child, .team-cards:nth-child(2) {
+  margin-top: 0px !important;
+}
+@media (min-width: 992px) {
+  .team-cards:nth-child(3), .team-cards:nth-child(4) {
+    margin-top: 0px !important;
+  }
+}
+.team-cards .team-card .team-img {
+  height: 316px;
+}
+@media (max-width: 767.98px) {
+  .team-cards .team-card .team-img {
+    height: 200px;
+  }
 }
 
 .continue-reading-card .news-image {
@@ -18134,20 +18195,41 @@ button,
 .our-sector-card .our-sector-img {
   height: 467px;
 }
+@media (max-width: 991.98px) {
+  .our-sector-card .our-sector-img {
+    height: 270px;
+  }
+}
 
 .how-we-work-card {
   height: 344px;
   padding: 20px 20px 50px 35px;
 }
+@media (max-width: 991.98px) {
+  .how-we-work-card {
+    padding: 20px 20px 25px 20px;
+  }
+}
 .how-we-work-card .how-we-work-close {
   height: 42px;
   width: 42px;
+}
+@media (max-width: 991.98px) {
+  .how-we-work-card .how-we-work-close {
+    height: 35px;
+    width: 35px;
+  }
 }
 .how-we-work-card .how-we-work-close .plus-img {
   height: 10px;
 }
 .how-we-work-card .card-content {
   transform: translateY(160px);
+}
+@media (max-width: 991.98px) {
+  .how-we-work-card .card-content {
+    transform: translateY(200px);
+  }
 }
 .how-we-work-card .desc {
   height: 0px;
@@ -18159,6 +18241,11 @@ button,
 }
 .how-we-work-card:hover .card-content {
   transform: translateY(20px);
+}
+@media (max-width: 991.98px) {
+  .how-we-work-card:hover .card-content {
+    transform: translateY(50px);
+  }
 }
 .how-we-work-card:hover .desc {
   height: fit-content;
@@ -18185,8 +18272,8 @@ button,
 }
 @media (max-width: 991.98px) {
   .close-div {
-    top: 25px;
-    right: 25px;
+    top: 16px;
+    right: 16px;
   }
 }
 .close-div .btn-close {
@@ -18195,7 +18282,16 @@ button,
   width: 42px;
   background: none;
 }
+@media (max-width: 991.98px) {
+  .close-div .btn-close {
+    width: 35px;
+    height: 35px;
+  }
+}
 
+.modal {
+  border-color: transparent !important;
+}
 @media (max-width: 991.98px) {
   .modal .modal-dialog {
     min-width: 100%;
@@ -18225,6 +18321,8 @@ button,
 .modal.member-modal .modal-dialog .modal-content {
   height: 515px;
   padding: 0 62px 0 0;
+  border: 0px !important;
+  border-radius: 0px !important;
 }
 @media (max-width: 991.98px) {
   .modal.member-modal .modal-dialog .modal-content {
@@ -18239,7 +18337,7 @@ button,
   .modal.member-modal .modal-dialog .modal-content .carousel-inner .modal-member-img {
     min-width: 100%;
     width: 100%;
-    height: 350px !important;
+    height: 375px !important;
   }
 }
 .modal.member-modal .modal-dialog .modal-content .carousel-inner .modal-member-content {
@@ -18248,7 +18346,7 @@ button,
 }
 @media (max-width: 991.98px) {
   .modal.member-modal .modal-dialog .modal-content .carousel-inner .modal-member-content {
-    padding: 45px 25px 55px;
+    padding: 50px 20px 65px;
   }
 }
 .modal.member-modal .modal-dialog .modal-content .carousel-inner .modal-member-content .modal-member-desc {
@@ -18268,8 +18366,8 @@ button,
 @media (max-width: 991.98px) {
   .modal.member-modal .modal-dialog .modal-content .carousel-inner .modal-member-content .carousel-arrow .carousel-control-prev,
   .modal.member-modal .modal-dialog .modal-content .carousel-inner .modal-member-content .carousel-arrow .carousel-control-next {
-    height: 35px;
-    width: 35px;
+    height: 54px;
+    width: 54px;
   }
 }
 .modal.member-modal .modal-dialog .modal-content .carousel-inner .modal-member-content .carousel-arrow .carousel-control-prev {
@@ -18412,14 +18510,31 @@ button,
   flex-direction: column;
   text-align: start;
   width: 2px;
-  height: 49px;
+  height: 50px;
   background-color: rgba(52, 55, 65, 0.14);
+}
+@media (max-width: 991.98px) {
+  .testimonial-slider .slick-dots li {
+    height: 60px;
+  }
 }
 .testimonial-slider .slick-dots li.slick-active {
   background-color: #343741;
 }
 .testimonial-slider .slick-dots li button {
   display: none;
+}
+
+.how-we-work-slider .slick-list,
+.latest-news-slider .slick-list {
+  overflow: visible;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.how-we-work-slider .slick-list .slick-slide,
+.latest-news-slider .slick-list .slick-slide {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .history-slider .slick-list {
@@ -18443,7 +18558,7 @@ button,
 }
 @media (max-width: 991.98px) {
   .history-slider .our-history .our-history-part {
-    padding-right: 15px;
+    padding-right: 16px;
   }
 }
 .history-slider .our-history .our-history-part .our-history-img {
@@ -18451,7 +18566,7 @@ button,
 }
 @media (max-width: 991.98px) {
   .history-slider .our-history .our-history-part .our-history-img {
-    height: 276px;
+    height: 293px;
   }
 }
 
@@ -18671,6 +18786,29 @@ footer .footerlinks-group .footer-lins:last-child {
   border: 1px solid #323639;
 }
 
+.closet-accordion .closet-header.active .accordion-close img {
+  transform: rotate(45deg);
+}
+.closet-accordion .closet-header .accordion-close {
+  height: 42px;
+  width: 100%;
+  max-width: 42px;
+}
+@media (max-width: 991.98px) {
+  .closet-accordion .closet-header .accordion-close {
+    height: 35px;
+    width: 100%;
+    max-width: 35px;
+  }
+}
+.closet-accordion .closet-header .accordion-close img {
+  height: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.closet-accordion .closet-content {
+  display: none;
+}
+
 @media (max-width: 991.98px) {
   .home-hero-section {
     height: 683px;
@@ -18716,23 +18854,52 @@ footer .footerlinks-group .footer-lins:last-child {
 }
 
 .testimonial-slider-section .quote-img {
+  width: 25px;
   height: 25px;
   margin-right: 40px;
 }
+@media (max-width: 991.98px) {
+  .testimonial-slider-section .quote-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
 .testimonial-slider-section .testimonial-col {
-  margin-left: 40px;
+  padding-left: 50px;
+}
+@media (max-width: 991.98px) {
+  .testimonial-slider-section .testimonial-col {
+    padding-left: 25px;
+  }
 }
 
 .sub-hero-section {
   height: 583px;
 }
+@media (max-width: 991.98px) {
+  .sub-hero-section {
+    height: 560px;
+  }
+}
 
 .image-video-full-banner-img {
   height: 689px;
 }
+@media (max-width: 991.98px) {
+  .image-video-full-banner-img {
+    height: 270px;
+    border-radius: 0px !important;
+  }
+}
 
 .accordion-left-right-section .accordion-image {
   height: 664px;
+}
+@media (max-width: 991.98px) {
+  .accordion-left-right-section .accordion-image {
+    height: 335px;
+  }
 }
 .accordion-left-right-section .closet-accordion .closet-item {
   border-bottom: 1px solid #DDDDDD;
@@ -18740,30 +18907,27 @@ footer .footerlinks-group .footer-lins:last-child {
 .accordion-left-right-section .closet-accordion .closet-item:first-child {
   border-top: 1px solid #DDDDDD;
 }
-.accordion-left-right-section .closet-accordion .closet-item .closet-header.active .accordion-close {
-  display: block !important;
-}
-.accordion-left-right-section .closet-accordion .closet-item .closet-header .accordion-close {
-  height: 42px;
-}
-.accordion-left-right-section .closet-accordion .closet-content {
-  display: none;
-}
 
 .logo-slider-section .logo-img {
   height: 45px;
 }
 
-.team-cards .team-cards {
-  height: 316px;
-}
-
 .image-video-small-banner-img {
   height: 583px;
+}
+@media (max-width: 991.98px) {
+  .image-video-small-banner-img {
+    height: 270px;
+  }
 }
 
 .small-left-right-section .small-left-right-img {
   height: 538px;
+}
+@media (max-width: 991.98px) {
+  .small-left-right-section .small-left-right-img {
+    height: 335px;
+  }
 }
 
 .team-info-container {
@@ -18878,22 +19042,6 @@ footer .footerlinks-group .footer-lins:last-child {
 
 .faq-accordion-section .closet-accordion .closet-item {
   border-top: 1px solid rgba(0, 0, 0, 0.35);
-}
-.faq-accordion-section .closet-accordion .closet-item .closet-header .accordion-close {
-  height: 42px;
-  width: 42px;
-}
-.faq-accordion-section .closet-accordion .closet-item .closet-header .accordion-close .plus {
-  height: 10px;
-}
-.faq-accordion-section .closet-accordion .closet-item .closet-header.active .accordion-close .plus {
-  transform: rotate(45deg);
-}
-.faq-accordion-section .closet-accordion .closet-item .closet-header .accordion-close {
-  height: 42px;
-}
-.faq-accordion-section .closet-accordion .closet-content {
-  display: none;
 }
 
 .privacy-section .privacy-left-content .privacy-links {
