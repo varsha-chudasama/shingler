@@ -48,11 +48,20 @@
 .project-auto-slider-cards {
     .project-card-image {
         height: 413px;
+
+        @include media-breakpoint-down(lg) {
+            height: 250px;
+        }
     }
 
     .project-arrow {
         height: 42px;
         width: 42px;
+
+        @include media-breakpoint-down(lg) {
+            width: 35px;
+            height: 35px;
+        }
 
         img {
             height: 9px;
@@ -63,12 +72,24 @@
 .latest-cards-col {
     border-right: 1px solid $color-DDDDDD;
 
+    @include media-breakpoint-down(lg) {
+        border-right: 0px !important;
+    }
+
     &:first-child {
         flex: 0 0 auto;
         width: 50%;
 
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+
         .news-image {
             height: 502px;
+
+            @include media-breakpoint-down(lg) {
+                height: 250px;
+            }
         }
     }
 
@@ -77,13 +98,47 @@
         flex: 0 0 auto;
         width: 25%;
 
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+
         .news-image {
             height: 266px;
+
+            @include media-breakpoint-down(lg) {
+                height: 250px;
+            }
         }
     }
 
     &:last-child {
         border-right: none;
+    }
+}
+
+.team-cards {
+
+    &:first-child,
+    &:nth-child(2) {
+        margin-top: 0px !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            margin-top: 0px !important;
+        }
+    }
+
+    .team-card {
+        .team-img {
+            height: 316px;
+
+            @include media-breakpoint-down(md) {
+                height: 200px;
+            }
+        }
     }
 }
 
@@ -98,6 +153,10 @@
 
     .our-sector-img {
         height: 467px;
+
+        @include media-breakpoint-down(lg) {
+            height: 270px;
+        }
     }
 }
 
@@ -105,9 +164,18 @@
     height: 344px;
     padding: 20px 20px 50px 35px;
 
+    @include media-breakpoint-down(lg) {
+        padding: 20px 20px 25px 20px;
+    }
+
     .how-we-work-close {
         height: 42px;
         width: 42px;
+
+        @include media-breakpoint-down(lg) {
+            height: 35px;
+            width: 35px;
+        }
 
         .plus-img {
             height: 10px;
@@ -116,6 +184,10 @@
 
     .card-content {
         transform: translateY(160px);
+
+        @include media-breakpoint-down(lg) {
+            transform: translateY(200px);
+        }
     }
 
     .desc {
@@ -131,6 +203,10 @@
 
         .card-content {
             transform: translateY(20px);
+
+            @include media-breakpoint-down(lg) {
+                transform: translateY(50px);
+            }
         }
 
         .desc {

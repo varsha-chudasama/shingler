@@ -1,14 +1,17 @@
-.social-icon-group{
+.social-icon-group {
     margin-right: 20px;
-    &:last-child{
+
+    &:last-child {
         margin-right: 0px !important;
     }
-    .social-icon{
+
+    .social-icon {
         height: 20px;
     }
 }
-.location-section{
-    .location-img{
+
+.location-section {
+    .location-img {
         height: 573px;
         mix-blend-mode: luminosity;
         @include media-breakpoint-down(lg){
@@ -17,9 +20,9 @@
     }
 }
 
-.faq-accordion-section{
-       .closet-accordion{
-        .closet-item{
+.faq-accordion-section {
+    .closet-accordion {
+        .closet-item {
             border-top: 1px solid rgba($color: $black, $alpha: 0.35);
             .closet-header{
                 .accordion-close{

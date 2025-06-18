@@ -1,9 +1,17 @@
-.image-video-small-banner-img{
+.image-video-small-banner-img {
     height: 583px;
+
+    @include media-breakpoint-down(lg) {
+        height: 270px;
+    }
 }
 
-.small-left-right-section{
-    .small-left-right-img{
+.small-left-right-section {
+    .small-left-right-img {
         height: 538px;
+
+        @include media-breakpoint-down(lg) {
+            height: 335px;
+        }
     }
 }

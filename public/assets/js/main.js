@@ -20462,6 +20462,8 @@ var Plugins = /*#__PURE__*/function () {
       this.LogoSlider();
       this.ContinueReading();
       this.FooterSlider();
+      this.LatestNewsSlider();
+      this.HowWeWorkSlider();
     }
   }, {
     key: "HomeHeroSlider",
@@ -20509,7 +20511,7 @@ var Plugins = /*#__PURE__*/function () {
         responsive: [{
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1
           }
         }, {
@@ -20526,11 +20528,33 @@ var Plugins = /*#__PURE__*/function () {
     value: function TestimonialSlider() {
       $('.testimonial-slider').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         arrows: false,
         slidesToScroll: 1,
         slidesToShow: 1,
         fade: true
+      });
+    }
+  }, {
+    key: "LatestNewsSlider",
+    value: function LatestNewsSlider() {
+      $('.latest-news-slider').slick({
+        dots: false,
+        infinite: false,
+        arrows: false,
+        slidesToScroll: 1,
+        slidesToShow: 1
+      });
+    }
+  }, {
+    key: "HowWeWorkSlider",
+    value: function HowWeWorkSlider() {
+      $('.how-we-work-slider').slick({
+        dots: false,
+        infinite: false,
+        arrows: false,
+        slidesToScroll: 1,
+        slidesToShow: 1
       });
     }
   }, {
@@ -20579,7 +20603,7 @@ var Plugins = /*#__PURE__*/function () {
         }, {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1
+            slidesToShow: 2
           }
         }]
       });
