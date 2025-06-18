@@ -18868,7 +18868,11 @@ footer .footerlinks-group .footer-lins:last-child {
 
 .news-open-content-section .invasting-links {
   top: 270px;
-  height: calc(100vh - 526px);
+}
+@media (min-width: 992px) {
+  .news-open-content-section .invasting-links {
+    height: calc(100vh - 526px);
+  }
 }
 .news-open-content-section .news-open-img {
   height: 661px;

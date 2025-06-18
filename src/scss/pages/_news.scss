@@ -18,7 +18,9 @@
 .news-open-content-section{
     .invasting-links{
         top: 270px;
-        height: calc(100vh - 526px);
+        @include media-breakpoint-up(lg){
+            height: calc(100vh - 526px);
+        }
     }
     .news-open-img{
         height: 661px;
