@@ -20673,6 +20673,7 @@ var Parts = /*#__PURE__*/function () {
     value: function init() {
       this.AccordionImgChange();
       this.ReadMoreReadLess();
+      this.OverViewClick();
     }
   }, {
     key: "AccordionImgChange",
@@ -20710,6 +20711,15 @@ var Parts = /*#__PURE__*/function () {
           var isExpanded = $(this).text() === 'Read less';
           $desc.text(isExpanded ? $desc.data('short-text') : $desc.data('full-text'));
           $(this).text(isExpanded ? 'Read more' : 'Read less');
+        });
+      });
+    }
+  }, {
+    key: "OverViewClick",
+    value: function OverViewClick() {
+      $(document).ready(function () {
+        $('.how-we-work-card').on('click', function () {
+          $(this).toggleClass('how-we-work-click');
         });
       });
     }

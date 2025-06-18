@@ -12,9 +12,18 @@
     }
 }
 
-.logo-slider {
+.logo-slider,
+.project-auto-slider {
     .slick-list {
-        overflow: visible;
+        overflow: visible !important;
+    }
+}
+
+.continue-reading-slider{
+    .slick-list{
+        @include media-breakpoint-down(lg){
+            overflow: visible !important;
+        }
     }
 }
 
@@ -70,12 +79,6 @@
 .continue-reading-slider {
     .slick-slide {
         border-right: 1px solid $color-DDDDDD;
-    }
-}
-
-.project-auto-slider {
-    .slick-list {
-        overflow: visible !important;
     }
 }
 

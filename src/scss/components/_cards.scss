@@ -196,7 +196,7 @@
         visibility: hidden;
     }
 
-    &:hover {
+    &.how-we-work-click {
         .plus-img {
             transform: rotate(45deg);
         }
@@ -218,12 +218,17 @@
 }
 
 .project-col {
-    border-right: 1px solid $color-707070;
+    @include media-breakpoint-up(lg){
+        border-right: 1px solid $color-707070;
+    }
 }
 
 .project-cards {
     .project-card-image {
         height: 413px;
+        @include media-breakpoint-down(lg){
+            height: 250px;
+        }
     }
 
     .project-arrow {

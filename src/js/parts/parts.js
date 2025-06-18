@@ -3,6 +3,7 @@ export class Parts{
     init() {
         this.AccordionImgChange();
         this.ReadMoreReadLess();
+        this.OverViewClick();
     }
 
     AccordionImgChange(){
@@ -44,6 +45,14 @@ export class Parts{
 
                 $desc.text(isExpanded ? $desc.data('short-text') : $desc.data('full-text'));
                 $(this).text(isExpanded ? 'Read more' : 'Read less');
+            });
+        });
+    }
+
+    OverViewClick(){
+        $(document).ready(function() {
+            $('.how-we-work-card').on('click', function() {
+                $(this).toggleClass('how-we-work-click');
             });
         });
     }

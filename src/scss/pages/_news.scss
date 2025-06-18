@@ -24,12 +24,28 @@
     }
     .news-open-img{
         height: 661px;
+        .play-btn{
+            height: 110px;
+        }
+        @include media-breakpoint-down(lg){
+            height: 280px;
+             .play-btn{
+                height: 49px;
+            }
+        }
+        .news-open-img-layer{
+            background: linear-gradient(180deg, #3236396A,#32363967,#32363988,#3236399B);
+            opacity: 75%;
+        }
     }
     .testimonial-content{
         border-top: 1px solid rgba($color: $color-323639, $alpha: 0.3);
         border-bottom: 1px solid rgba($color: $color-323639, $alpha: 0.3);
         .black-quote{
             height: 57px;
+            @include media-breakpoint-down(lg){
+                height: 41px;
+            }
         }
     }
 }

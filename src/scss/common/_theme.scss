@@ -6,11 +6,19 @@
   &.container2 {
     padding-left: 25px;
     padding-right: 25px;
+     @include media-breakpoint-down(lg) {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
   }
 
   &.container3 {
     padding-left: 38px;
     padding-right: 38px;
+     @include media-breakpoint-down(lg) {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
   }
 
   @include media-breakpoint-down(lg) {
