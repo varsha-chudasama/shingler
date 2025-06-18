@@ -1,5 +1,11 @@
 .opportunities-section{
+    .title-column{
+        border-bottom: 1px solid rgba($color: $white, $alpha: 0.34);
+    }
     .bottom-border-col{
         border-bottom: 1px solid rgba($color: $white, $alpha: 0.34);
+        @include media-breakpoint-down(lg){
+            border-top: 1px solid rgba($color: $white, $alpha: 0.34);
+        }
     }
 }

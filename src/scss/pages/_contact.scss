@@ -11,6 +11,9 @@
     .location-img{
         height: 573px;
         mix-blend-mode: luminosity;
+        @include media-breakpoint-down(lg){
+            height: 250px;
+        }
     }
 }
 
@@ -22,8 +25,14 @@
                 .accordion-close{
                     height: 42px;
                     width: 42px;
+                    max-width: 42px !important;
                     .plus{
                         height: 10px;
+                    }
+                    @include media-breakpoint-down(lg){
+                        height: 35px;
+                        width: 35px;
+                         max-width: 35px !important;
                     }
                 }
                 &.active{
@@ -33,9 +42,7 @@
                         }
                     }
                 }
-                .accordion-close{
-                    height: 42px;
-                }
+                
             }
         }
         .closet-content{
