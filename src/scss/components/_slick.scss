@@ -1,4 +1,4 @@
-.hero-slider{
+.hero-slider {
     .slick-list {
         height: 100%;
 
@@ -12,97 +12,119 @@
     }
 }
 
-.logo-slider{
-    .slick-list{
+.logo-slider {
+    .slick-list {
         overflow: visible;
     }
 }
 
-.history-slider-section{
-    .slick-arrow{
+.history-slider-section {
+    .slick-arrow {
+
         .prev-arrow,
-        .next-arrow{
+        .next-arrow {
             height: 70px;
             width: 70px;
         }
     }
 }
 
-.home-hero-section{
-    .slick-counter{
+.home-hero-section {
+    .slick-counter {
         bottom: 80px;
+
+        @include media-breakpoint-down(lg) {
+            bottom: 30px;
+        }
     }
-    .slick-dots{
+
+    .slick-dots {
         position: initial;
         text-align: start;
-        li{
+        display: flex;
+        align-items: center;
+
+        li {
             width: 91px;
             height: 2px;
             background-color: rgba($color: $white, $alpha: 0.44);
             margin: 0px;
-            &.slick-active{
+
+            &.slick-active {
                 background-color: $color-3CC5ED;
             }
-            button{
+
+            button {
                 display: none !important;
             }
         }
     }
 }
 
-.project-auto-slider{
-    .slick-slide{
+.project-auto-slider {
+    .slick-slide {
         border-right: 1px solid $color-707070;
     }
 }
-.continue-reading-slider{
-    .slick-slide{
+
+.continue-reading-slider {
+    .slick-slide {
         border-right: 1px solid $color-DDDDDD;
     }
 }
-.project-auto-slider{
-    .slick-list{
+
+.project-auto-slider {
+    .slick-list {
         overflow: visible !important;
     }
 }
+
 .project-auto-slider,
-.continue-reading-slider{
-    .slick-list{
+.continue-reading-slider {
+    .slick-list {
         margin-left: -15px;
         margin-right: -15px;
-        .slick-slide{
+
+        .slick-slide {
             padding-left: 15px;
             padding-right: 15px;
         }
     }
 }
-.footer-slider{
-    .slick-list{
+
+.footer-slider {
+    .slick-list {
         margin-left: -8px;
         margin-right: -8px;
-        .slick-slide{
+
+        .slick-slide {
             padding-left: 8px;
             padding-right: 8px;
         }
     }
 }
-.testimonial-slider{
-    .slick-list{
+
+.testimonial-slider {
+    .slick-list {
         z-index: 1;
     }
-    .slick-dots{
+
+    .slick-dots {
         top: 0px;
-        li{
+
+        li {
             display: flex;
             flex-direction: column;
             text-align: start;
             width: 2px;
             height: 49px;
             background-color: rgba($color: $color-343741, $alpha: 0.14);
-            &.slick-active{
+
+            &.slick-active {
                 background-color: rgba($color: $color-343741, $alpha: 1.0);
             }
-            button{
+
+            button {
                 display: none;
             }
         }
@@ -146,7 +168,7 @@
 
             .our-history-img {
                 height: 365px;
-                
+
                 @include media-breakpoint-down(lg) {
                     height: 276px;
                 }
@@ -155,6 +177,6 @@
     }
 }
 
-.slick-hidden{
+.slick-hidden {
     display: none !important;
 }

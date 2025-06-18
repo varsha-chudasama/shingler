@@ -11,111 +11,146 @@
     }
 }
 
-.two-cards{
+.two-cards {
     height: 435px;
-    .two-card-layer{
+
+    @include media-breakpoint-down(lg) {
+        height: 260px;
+    }
+
+    .two-card-layer {
         background: linear-gradient(#00000036, #0808088E);
     }
-    .two-card-content{
+
+    .two-card-content {
         padding: 31px 37px 40px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 16px 16px 30px 16px;
+        }
     }
-    .two-card-arrow{
+
+    .two-card-arrow {
         height: 42px;
         width: 42px;
-        img{
+
+        @include media-breakpoint-down(lg) {
+            width: 35px;
+            height: 35px;
+        }
+
+        img {
             height: 9px;
         }
     }
 }
 
-.project-auto-slider-cards{
-    .project-card-image{
+.project-auto-slider-cards {
+    .project-card-image {
         height: 413px;
     }
-    .project-arrow{
+
+    .project-arrow {
         height: 42px;
         width: 42px;
-        img{
+
+        img {
             height: 9px;
         }
     }
 }
 
-.latest-cards-col{
+.latest-cards-col {
     border-right: 1px solid $color-DDDDDD;
-    &:first-child{
+
+    &:first-child {
         flex: 0 0 auto;
         width: 50%;
-        .news-image{
+
+        .news-image {
             height: 502px;
         }
     }
+
     &:nth-child(2),
-    &:nth-child(3){
+    &:nth-child(3) {
         flex: 0 0 auto;
         width: 25%;
-         .news-image{
+
+        .news-image {
             height: 266px;
         }
     }
-    &:last-child{
+
+    &:last-child {
         border-right: none;
     }
 }
 
-.continue-reading-card{
-    .news-image{
+.continue-reading-card {
+    .news-image {
         height: 266px;
     }
 }
 
-.our-sector-card{
+.our-sector-card {
     border-top: 1px solid rgba($color: $black, $alpha: 0.2);
-    .our-sector-img{
+
+    .our-sector-img {
         height: 467px;
     }
 }
 
-.how-we-work-card{
+.how-we-work-card {
     height: 344px;
     padding: 20px 20px 50px 35px;
-    .how-we-work-close{
+
+    .how-we-work-close {
         height: 42px;
         width: 42px;
-        .plus-img{
+
+        .plus-img {
             height: 10px;
         }
     }
-    .card-content{
+
+    .card-content {
         transform: translateY(160px);
     }
-    .desc{
+
+    .desc {
         height: 0px;
         opacity: 0;
         visibility: hidden;
     }
-    &:hover{
-        .plus-img{
+
+    &:hover {
+        .plus-img {
             transform: rotate(45deg);
         }
-        .card-content{
+
+        .card-content {
             transform: translateY(20px);
         }
-         .desc{
+
+        .desc {
             height: fit-content;
             opacity: 1;
             visibility: visible;
         }
     }
 }
-.project-col{
+
+.project-col {
     border-right: 1px solid $color-707070;
 }
-.project-cards{
-    .project-card-image{
+
+.project-cards {
+    .project-card-image {
         height: 413px;
     }
-    .project-arrow{
+
+    .project-arrow {
         height: 42px;
         width: 42px;
     }

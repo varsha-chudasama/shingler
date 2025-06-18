@@ -1,36 +1,58 @@
-.home-hero-section{
-    .hero-slider{
-        .hero-content{
+.home-hero-section {
+    @include media-breakpoint-down(lg) {
+        height: 683px;
+    }
+
+    .hero-slider {
+        .hero-content {
             height: calc(100% - 100px);
         }
     }
-    .home-hero-pattern{
+
+    .home-hero-pattern {
         height: 428px;
+
+        @include media-breakpoint-down(lg) {
+            height: 80px;
+        }
     }
 }
 
-.left-right-content-section{
-    .left-right-bg-image{
+.left-right-content-section {
+    .left-right-bg-image {
         height: 428px;
+
+        @include media-breakpoint-down(lg) {
+            height: 80px;
+        }
     }
 }
 
-.two-cards-section{
+.two-cards-section {
     background: linear-gradient($color-EDF0F7 50%, $white 50%);
-}
 
-.left-right-image-video-section{
-    .left-image{
-        height: 664px;
+    @include media-breakpoint-down(lg) {
+        background: linear-gradient(#EDF0F7 30%, #fff 30%);
     }
 }
 
-.testimonial-slider-section{
-    .quote-img{
+.left-right-image-video-section {
+    .left-image {
+        height: 664px;
+
+        @include media-breakpoint-down(lg) {
+            height: 335px;
+        }
+    }
+}
+
+.testimonial-slider-section {
+    .quote-img {
         height: 25px;
         margin-right: 40px;
     }
-    .testimonial-col{
-     margin-left: 40px;   
+
+    .testimonial-col {
+        margin-left: 40px;
     }
 }
