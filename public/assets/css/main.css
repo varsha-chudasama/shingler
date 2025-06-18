@@ -17848,110 +17848,6 @@ textarea {
   opacity: 65%;
 }
 
-@media (max-width: 991.98px) {
-  .res-font11 {
-    font-size: 11px;
-  }
-  .res-font12 {
-    font-size: 12px;
-  }
-  .res-font13 {
-    font-size: 13px;
-  }
-  .res-font14 {
-    font-size: 14px;
-  }
-  .res-font16 {
-    font-size: 16px;
-  }
-  .res-font18 {
-    font-size: 18px;
-  }
-  .res-font25 {
-    font-size: 25px;
-  }
-  .res-font26 {
-    font-size: 26px;
-  }
-  .res-font36 {
-    font-size: 36px;
-  }
-  .res-font40 {
-    font-size: 40px;
-  }
-  .res-font20 {
-    font-size: 20px;
-  }
-  .res-font22 {
-    font-size: 22px;
-  }
-  .res-font24 {
-    font-size: 24px;
-  }
-  .res-font28 {
-    font-size: 28px;
-  }
-  .res-font30 {
-    font-size: 30px;
-  }
-  .res-font35 {
-    font-size: 35px;
-  }
-  .res-leading14 {
-    line-height: 14px;
-  }
-  .res-leading26 {
-    line-height: 26px;
-  }
-  .res-leading29 {
-    line-height: 29px;
-  }
-  .res-leading32 {
-    line-height: 32px;
-  }
-  .res-leading35 {
-    line-height: 35px;
-  }
-  .res-leading43 {
-    line-height: 43px;
-  }
-  .res-leading45 {
-    line-height: 45px;
-  }
-  .res-leading48 {
-    line-height: 48px;
-  }
-  .res-leading59 {
-    line-height: 59px;
-  }
-  .res-leading60 {
-    line-height: 60px;
-  }
-  .res-leading65 {
-    line-height: 65px;
-  }
-  .res-leading85 {
-    line-height: 85px;
-  }
-  .res-leading24 {
-    line-height: 24px;
-  }
-  .res-leading40 {
-    line-height: 40px;
-  }
-  .res-space-0_12px {
-    letter-spacing: -0.12px;
-  }
-  .res-space0_24px {
-    letter-spacing: 0.24px;
-  }
-  .res-radius3 {
-    border-radius: 3px;
-  }
-  .res-radius5 {
-    border-radius: 5px;
-  }
-}
 button,
 [type=button],
 [type=reset],
@@ -18062,31 +17958,15 @@ button,
 .two-cards {
   height: 435px;
 }
-@media (max-width: 991.98px) {
-  .two-cards {
-    height: 260px;
-  }
-}
 .two-cards .two-card-layer {
   background: linear-gradient(rgba(0, 0, 0, 0.2117647059), rgba(8, 8, 8, 0.5568627451));
 }
 .two-cards .two-card-content {
   padding: 31px 37px 40px;
 }
-@media (max-width: 991.98px) {
-  .two-cards .two-card-content {
-    padding: 16px 16px 30px 16px;
-  }
-}
 .two-cards .two-card-arrow {
   height: 42px;
   width: 42px;
-}
-@media (max-width: 991.98px) {
-  .two-cards .two-card-arrow {
-    width: 35px;
-    height: 35px;
-  }
 }
 .two-cards .two-card-arrow img {
   height: 9px;
@@ -18345,16 +18225,9 @@ button,
 .home-hero-section .slick-counter {
   bottom: 80px;
 }
-@media (max-width: 991.98px) {
-  .home-hero-section .slick-counter {
-    bottom: 30px;
-  }
-}
 .home-hero-section .slick-dots {
   position: initial;
   text-align: start;
-  display: flex;
-  align-items: center;
 }
 .home-hero-section .slick-dots li {
   width: 91px;
@@ -18671,48 +18544,23 @@ footer .footerlinks-group .footer-lins:last-child {
   border: 1px solid #323639;
 }
 
-@media (max-width: 991.98px) {
-  .home-hero-section {
-    height: 683px;
-  }
-}
 .home-hero-section .hero-slider .hero-content {
   height: calc(100% - 100px);
 }
 .home-hero-section .home-hero-pattern {
   height: 428px;
 }
-@media (max-width: 991.98px) {
-  .home-hero-section .home-hero-pattern {
-    height: 80px;
-  }
-}
 
 .left-right-content-section .left-right-bg-image {
   height: 428px;
-}
-@media (max-width: 991.98px) {
-  .left-right-content-section .left-right-bg-image {
-    height: 80px;
-  }
 }
 
 .two-cards-section {
   background: linear-gradient(#EDF0F7 50%, #fff 50%);
 }
-@media (max-width: 991.98px) {
-  .two-cards-section {
-    background: linear-gradient(#EDF0F7 30%, #fff 30%);
-  }
-}
 
 .left-right-image-video-section .left-image {
   height: 664px;
-}
-@media (max-width: 991.98px) {
-  .left-right-image-video-section .left-image {
-    height: 335px;
-  }
 }
 
 .testimonial-slider-section .quote-img {
@@ -18902,11 +18750,17 @@ footer .footerlinks-group .footer-lins:last-child {
 @media (max-width: 991.98px) {
   .privacy-section .privacy-left-content .privacy-links li {
     margin-bottom: 0px !important;
+    margin-right: 40px;
   }
 }
 .privacy-section .privacy-left-content .privacy-links li .arrow {
   height: 9px;
   left: -10px;
+}
+@media (max-width: 991.98px) {
+  .privacy-section .privacy-left-content .privacy-links li .arrow {
+    height: 10px;
+  }
 }
 .privacy-section .privacy-left-content .privacy-links .active a {
   opacity: 100% !important;
