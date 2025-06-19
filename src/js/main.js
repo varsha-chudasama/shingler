@@ -12,6 +12,7 @@ import { Truncate } from './parts/truncate.js';
 import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
 import { Header } from './parts/header.js';
+import { clippingParents } from '@popperjs/core';
 
 
 // export for others scripts to use
@@ -52,3 +53,12 @@ $(function () {
 });
 
 // ===========================================================================
+$(document).ready(function () {
+  $('.menu-icon').on('click', function () {
+    if ($('.nav-items').hasClass('d-none')) {
+      $('.nav-items').removeClass('d-none'); // show nav
+    } else {
+      $('.nav-items').addClass('d-none'); // hide nav
+    }
+  });
+});
