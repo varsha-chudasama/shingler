@@ -28,14 +28,6 @@
     }
 }
 
-.two-cards-section {
-    background: linear-gradient($color-EDF0F7 50%, $white 50%);
-
-    @include media-breakpoint-down(lg) {
-        background: linear-gradient(#EDF0F7 30%, #fff 30%);
-    }
-}
-
 .left-right-image-video-section {
     .left-image {
         height: 664px;

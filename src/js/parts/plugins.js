@@ -201,7 +201,7 @@ export class Plugins {
         {
           breakpoint: 1200,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 4,
           }
         },
         {

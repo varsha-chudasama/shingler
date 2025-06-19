@@ -20644,7 +20644,7 @@ var Plugins = /*#__PURE__*/function () {
         responsive: [{
           breakpoint: 1200,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 4
           }
         }, {
           breakpoint: 768,
