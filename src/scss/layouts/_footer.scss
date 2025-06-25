@@ -4,20 +4,50 @@ footer{
         .start-project-content{
             width: 545px;
             padding: 68px 34px 68px 50px;
+            @include media-breakpoint-up(lg){
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0 !important;
+            }
+            @include media-breakpoint-down(lg){
+                width: 300px;
+                padding: 42px 24px 42px 20px;
+                bottom: 0px !important;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
     .footer-slider{
         .footer-img{
             height: 207px;
+            @include media-breakpoint-down(lg){
+                height: 160px;
+            }
         }
     }
     .footer-icon{
         height: 42px;
         width: 42px;
         min-width: 42px;
+        @include media-breakpoint-down(lg){
+            height: 35px;
+            width: 35px;
+            min-width: 35px;
+        }
+
     }
     .footer-column{
-        border-right: 1px solid $color-707070;
+        @include media-breakpoint-up(lg){
+            border-right: 1px solid $color-707070;
+        }
+        @include media-breakpoint-down(lg){
+            .footer-column-div{
+                &:last-child{
+                    margin-bottom:  0px !important;
+                }
+            }
+        }
     }
     .footer-logo-group{
         .footer-logo{

@@ -18472,7 +18472,8 @@ button,
 }
 
 @media (max-width: 991.98px) {
-  .continue-reading-slider .slick-list {
+  .continue-reading-slider .slick-list,
+  .footer-slider .slick-list {
     overflow: visible !important;
   }
 }
@@ -18536,6 +18537,16 @@ button,
 .footer-slider .slick-list .slick-slide {
   padding-left: 8px;
   padding-right: 8px;
+}
+@media (max-width: 991.98px) {
+  .footer-slider .slick-list {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .footer-slider .slick-list .slick-slide {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .testimonial-slider .slick-list {
@@ -18853,16 +18864,51 @@ footer .start-project-section .start-project-content {
   width: 545px;
   padding: 68px 34px 68px 50px;
 }
+@media (min-width: 992px) {
+  footer .start-project-section .start-project-content {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0 !important;
+  }
+}
+@media (max-width: 991.98px) {
+  footer .start-project-section .start-project-content {
+    width: 300px;
+    padding: 42px 24px 42px 20px;
+    bottom: 0px !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 footer .footer-slider .footer-img {
   height: 207px;
+}
+@media (max-width: 991.98px) {
+  footer .footer-slider .footer-img {
+    height: 160px;
+  }
 }
 footer .footer-icon {
   height: 42px;
   width: 42px;
   min-width: 42px;
 }
-footer .footer-column {
-  border-right: 1px solid #707070;
+@media (max-width: 991.98px) {
+  footer .footer-icon {
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+  }
+}
+@media (min-width: 992px) {
+  footer .footer-column {
+    border-right: 1px solid #707070;
+  }
+}
+@media (max-width: 991.98px) {
+  footer .footer-column .footer-column-div:last-child {
+    margin-bottom: 0px !important;
+  }
 }
 footer .footer-logo-group .footer-logo {
   height: 60px;
@@ -18946,15 +18992,6 @@ footer .footerlinks-group .footer-lins:last-child {
 @media (max-width: 991.98px) {
   .left-right-content-section .left-right-bg-image {
     height: 80px;
-  }
-}
-
-.two-cards-section {
-  background: linear-gradient(#EDF0F7 50%, #fff 50%);
-}
-@media (max-width: 991.98px) {
-  .two-cards-section {
-    background: linear-gradient(#EDF0F7 30%, #fff 30%);
   }
 }
 
